@@ -1,0 +1,13 @@
+body { font-family: sans-serif; text-align: center; }
+.app-container { max-width: 500px; margin: auto; }
+.board { display: grid; grid-template-rows: repeat(9, 1fr); gap: 4px; }
+.row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; }
+.cell {
+  border: 1px solid #333;
+  padding: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+.cell.red { background: rgba(255,0,0,0.2); }
+.cell.blue { background: rgba(0,0,255,0.2); }
+.winner { margin-top: 16px; font-size: 1.2em; font-weight: bold; }

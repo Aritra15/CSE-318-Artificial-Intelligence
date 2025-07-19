@@ -77,7 +77,6 @@ Cut Algorithms::GreedyMaxcut(Graph &g){
     Cut result;
     result.x = X;
     result.y = Y;
-    //result.print();
     return result;
 }
 
@@ -183,10 +182,6 @@ Cut Algorithms::SemiGreedyMaxcut(Graph &g,double alpha){
             }
         }
 
-        // random_device rd;
-        // mt19937 gen(rd());
-        // uniform_int_distribution<> dis(0, rcl.size()-1);
-        // int idx = dis(gen);
         int idx = rand() % rcl.size();
 
         int indicator = get<1>(rcl[idx]);
